@@ -30,7 +30,7 @@ for addr in $addrs
 
 #Check if we should reboot and if the device has rebooted previously. Either
 #simple or requires mesh rebuild.
-if [ $reboot_score -gt 20 ]; then
+if [ $reboot_score -gt 15 ]; then
   if [ $has_rebooted -eq 1 ]; then
     echo "mesh rebuild incoming";
     rm -f /etc/mesh-setup-done;
