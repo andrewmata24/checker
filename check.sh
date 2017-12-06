@@ -12,7 +12,7 @@ REBOOT_FILE="/etc/netcheck/rbtscore";
 TIME_START_FILE="/etc/netcheck/time-start";
 REBOOTED_FILE="/etc/netcheck/has-rebooted";
 
-addrs=" 10.0.0.1 192.168.137.1 127.0.0.1 8.8.8.8";
+addrs=" 10.0.0.1 127.0.0.1 8.8.8.8";
 current_time=`date '+%s'`;
 
 read reboot_score < $REBOOT_FILE;
